@@ -1,0 +1,3 @@
+pip-tools
+frictionless
+git+https://github.com/splor-mg/dpm.git@main

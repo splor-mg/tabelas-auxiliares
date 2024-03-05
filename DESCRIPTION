@@ -1,0 +1,4 @@
+Package: tabelas-auxiliares
+Imports:
+    renv
+Encoding: UTF-8
