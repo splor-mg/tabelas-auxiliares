@@ -1,0 +1,28 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+  - name: Unidade Orçamentária - Código
+    type: integer
+  - name: Função - Código
+    type: integer
+  - name: Função - Descrição
+    type: integer
+  - name: Subfunção - Código
+    type: integer
+  - name: Subfunção - Descrição
+    type: string
+  - name: Programa - Código
+    type: integer
+  - name: Programa - Descrição
+    type: string
+  - name: Projeto_Atividade - Código
+    type: integer
+  - name: Projeto_Atividade - Descrição
+    type: string
+  - name: Subprojeto_Subatividade - Código
+    type: integer
+  - name: Subprojeto_Subatividade - Descrição
+    type: string
+  - name: Ano Exercicio Programa Trabalho
+    type: integer

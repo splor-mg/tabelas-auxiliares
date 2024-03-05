@@ -1,14 +1,10 @@
-name: tabelas-auxiliares
-resources:
-  - name: fact
-    path: data-raw/fact.txt
+name: tabela-auxiliar
+resources: 
+  - name: tbl-aux-acao-desc
+    type: table
+    path: data-raw/tbl-aux-acao-desc.csv
+    scheme: file
     format: csv
+    mediatype: text/csv
     encoding: utf-8
-    dialect: dialect.yaml
-    schema: schemas/fact.yaml
-  - name: dim
-    path: data-raw/dim.txt
-    format: csv
-    encoding: utf-8
-    dialect: dialect.yaml
-    schema: schemas/dim.yaml
+    schema: schemas/tbl-aux-acao-desc.yaml
