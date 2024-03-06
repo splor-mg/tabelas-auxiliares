@@ -2,7 +2,11 @@ name: tabela-auxiliar
 resources: 
   - name: tbl-aux-acao-desc
     type: table
-    path: data-raw/tbl-aux-acao-desc.csv
+    path: ["data-raw/tbl-aux-acao-desc-2024.csv", "data-raw/tbl-aux-acao-desc-2023.csv",
+    "data-raw/tbl-aux-acao-desc-2023.csv", "data-raw/tbl-aux-acao-desc-2022.csv",
+    "data-raw/tbl-aux-acao-desc-2021.csv", "data-raw/tbl-aux-acao-desc-2020.csv",
+    "data-raw/tbl-aux-acao-desc-2019.csv", "data-raw/tbl-aux-acao-desc-2018.csv", 
+    "data-raw/tbl-aux-acao-desc-2017.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
