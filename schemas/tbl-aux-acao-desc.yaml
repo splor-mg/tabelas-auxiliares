@@ -9,7 +9,7 @@ fields:
     type: integer
     target: funcao_cod
   - name: Função - Descrição
-    type: integer
+    type: string
     target: funcao_desc
   - name: Subfunção - Código
     type: integer

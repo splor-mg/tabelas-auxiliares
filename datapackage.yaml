@@ -12,3 +12,16 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     schema: schemas/tbl-aux-acao-desc.yaml
+
+  - name: tbl-aux-elemento-item-desc
+    type: table
+    path: ["data-raw/tbl-aux-elem-item-desc-2024.csv", "data-raw/tbl-aux-elem-item-desc-2023.csv",
+    "data-raw/tbl-aux-elem-item-desc-2023.csv", "data-raw/tbl-aux-elem-item-desc-2022.csv",
+    "data-raw/tbl-aux-elem-item-desc-2021.csv", "data-raw/tbl-aux-elem-item-desc-2020.csv",
+    "data-raw/tbl-aux-elem-item-desc-2019.csv", "data-raw/tbl-aux-elem-item-desc-2018.csv", 
+    "data-raw/tbl-aux-elem-item-desc-2017.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    schema: schemas/tbl-aux-elem-item-desc.yaml

@@ -1,0 +1,13 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+  - name: Unidade Orçamentária - Código
+    type: integer
+    target: uo_cod
+  - name: Elemento Item Despesa - Código
+    type: interger
+    target: elemento-item_cod
+  - name: Elemento Item Despesa - Descrição
+    type: string
+    target: elemento-item_desc
