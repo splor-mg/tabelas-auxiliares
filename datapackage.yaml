@@ -25,3 +25,17 @@ resources:
     mediatype: text/csv
     encoding: utf-8
     schema: schemas/tbl-aux-elem-item-desc.yaml
+
+
+  - name: tbl-aux-uo-sigla
+    type: table
+    path: ["data-raw/tbl-aux-uo-sigla-2024.csv", "data-raw/tbl-aux-uo-sigla-2023.csv",
+    "data-raw/tbl-aux-uo-sigla-2023.csv", "data-raw/tbl-aux-uo-sigla-2022.csv",
+    "data-raw/tbl-aux-uo-sigla-2021.csv", "data-raw/tbl-aux-uo-sigla-2020.csv",
+    "data-raw/tbl-aux-uo-sigla-2019.csv", "data-raw/tbl-aux-uo-sigla-2018.csv", 
+    "data-raw/tbl-aux-uo-sigla-2017.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    schema: schemas/tbl-aux-uo-sigla.yaml
