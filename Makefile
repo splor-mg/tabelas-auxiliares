@@ -1,28 +1,21 @@
-.PHONY: requirements all extract validate transform build check publish clean
+.PHONY: requirements all extract validate transform build check publish clean variables
 
-EXT = txt
+EXT = csv
 
 RESOURCE_NAMES := $(shell python main.py resources)
 OUTPUT_FILES := $(addsuffix .csv,$(addprefix data/,$(RESOURCE_NAMES)))
 
 all: extract validate transform build check
 
-%: requirements
-	@true
-
-requirements:
-	@echo Checking python packages...
-	@python scripts/requirements.py
-
 extract:
-	$(foreach resource_name, $(RESOURCE_NAMES),python main.py extract $(resource_name) &&) true
+	Rscript scripts/extract.R
 
 validate:
 	frictionless validate datapackage.yaml
 
 transform: $(OUTPUT_FILES)
 
-$(OUTPUT_FILES): data/%.csv: data-raw/%.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml
+$(OUTPUT_FILES): data/%.csv: data-raw/*.$(EXT) schemas/%.yaml scripts/transform.py datapackage.yaml
 	python main.py transform $*
 
 build: transform datapackage.json
@@ -40,3 +33,6 @@ publish:
 
 clean:
 	rm -f datapackage.json data/*.csv
+
+variables:
+	@echo $(OUTPUT_FILES)

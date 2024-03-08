@@ -1,4 +1,13 @@
 Package: tabelas-auxiliares
 Imports:
-    renv
+    renv,
+    testthat (>= 3.0.0),
+    gmailr (>= 2.0.0),
+    purrr,
+    stringr,
+    checks.execucao,
+    logger,
+    frictionless
+Remotes:
+    github::splor-mg/checks-execucao
 Encoding: UTF-8
