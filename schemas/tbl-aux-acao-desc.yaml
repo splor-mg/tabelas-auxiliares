@@ -5,21 +5,45 @@ fields:
   - name: Unidade Orçamentária - Código
     type: integer
     target: uo_cod
-  - name: Unidade Orçamentária - Sigla
-    type: string
-    target: uo_sigla
-  - name: Poder Unid Orçamentária - Código
+  - name: Função - Código
     type: integer
-    target: poder_cod
-  - name: Poder Unid Orçamentária - Desc
+    target: funcao_cod
+  - name: Função - Descrição
     type: string
-    target: poder_desc
-  - name: Órgão Vinculação Orçam - Código
+    target: funcao_desc
+  - name: Subfunção - Código
     type: integer
-    target: orgao-vinculacao_cod
-  - name: Órgão Vinculação Orçam - Nome
+    target: subfuncao_cod
+  - name: Subfunção - Descrição
     type: string
-    target: orgao-vinculacao_nome
-  - name: Ano Exercício Unidade Orçamentária
+    target: subfuncao_cod
+  - name: Programa - Código
     type: integer
-    target: ano_uo
+    target: programa_cod
+  - name: Programa - Descrição
+    type: string
+    target: programa_desc
+  - name: Projeto_Atividade - Código
+    type: integer
+    target: acao_cod
+  - name: Projeto_Atividade - Descrição
+    type: string
+    target: acao_desc
+  - name: Subprojeto_Subatividade - Código
+    type: integer
+    target: subprojeto_cod
+  - name: Subprojeto_Subatividade - Descrição
+    type: string
+    target: subprojeto_desc
+  - name: Ano Exercicio Programa Trabalho
+    type: integer
+    target: ano_programa
+
+missingValues:
+- "    " 
+- "   "  
+- " -   "
+- "-   "
+- " "
+- ""
+- " - "

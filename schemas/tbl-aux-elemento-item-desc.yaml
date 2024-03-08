@@ -6,8 +6,18 @@ fields:
     type: integer
     target: uo_cod
   - name: Elemento Item Despesa - Código
-    type: interger
+    type: integer
     target: elemento-item_cod
   - name: Elemento Item Despesa - Descrição
     type: string
     target: elemento-item_desc
+
+missingValues:
+  - "    " 
+  - "   "  
+  - " -   "
+  - "-   "
+  - " "
+  - ""
+  - " - "
+    

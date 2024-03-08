@@ -1,6 +1,7 @@
 name: tabela-auxiliar
 resources: 
   - name: tbl-aux-acao-desc
+    title: 'tabela auxiliar ação descrição'
     type: table
     path: ["data-raw/tbl-aux-acao-desc-2024.csv", "data-raw/tbl-aux-acao-desc-2023.csv",
     "data-raw/tbl-aux-acao-desc-2023.csv", "data-raw/tbl-aux-acao-desc-2022.csv",
@@ -11,6 +12,7 @@ resources:
     format: csv
     mediatype: text/csv
     encoding: utf-8
+    dialect: dialect.yaml
     schema: schemas/tbl-aux-acao-desc.yaml
 
   - name: tbl-aux-elemento-item-desc
@@ -24,7 +26,8 @@ resources:
     format: csv
     mediatype: text/csv
     encoding: utf-8
-    schema: schemas/tbl-aux-elem-item-desc.yaml
+    dialect: dialect.yaml
+    schema: schemas/tbl-aux-elemento-item-desc.yaml
 
 
   - name: tbl-aux-uo-sigla
@@ -38,4 +41,5 @@ resources:
     format: csv
     mediatype: text/csv
     encoding: utf-8
+    dialect: dialect.yaml
     schema: schemas/tbl-aux-uo-sigla.yaml
