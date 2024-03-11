@@ -18,7 +18,7 @@ fields:
   - name: Poder Unid Orçamentária - Código
     type: integer
     target: poder_cod
-  - name: Poder Unid Orçamentária - Descrição
+  - name: Poder Unid Orçamentária - Desc
     type: string
     target: poder_desc
   - name: Ano Exercício Unidade Orçamentária

@@ -29,16 +29,7 @@ fields:
   - name: Projeto_Atividade - Descrição
     type: string
     target: acao_desc
-  - name: Subprojeto_Subatividade - Código
-    type: integer
-    target: subprojeto_cod
-  - name: Subprojeto_Subatividade - Descrição
-    type: string
-    target: subprojeto_desc
-  - name: Ano Exercicio Programa Trabalho
-    type: integer
-    target: ano_programa
-
+  
 missingValues:
 - "    " 
 - "   "  
