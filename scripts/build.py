@@ -34,3 +34,6 @@ def build_package(descriptor: str = 'datapackage.yaml'):
         resource.infer(stats=True)
 
     target.to_json('datapackage.json')
+
+
+
