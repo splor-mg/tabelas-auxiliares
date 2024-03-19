@@ -28,7 +28,9 @@ jobs:
         cache-from: type=registry,ref=fjuniorr/${{ github.event.repository.name }}:latest
         cache-to: type=inline
     - name: ETL pipeline
-      run: docker run --rm --mount type=bind,source=${PWD},target=/project fjuniorr/${{ github.event.repository.name }} make all
+      env: 
+        GMAILR_KEY: ${{ secrets.GMAILR_KEY }}
+      run: docker run -e GMAILR_KEY=$GMAILR_KEY --rm --mount type=bind,source=${PWD},target=/project fjuniorr/${{ github.event.repository.name }} make all
     - name: Publish data package
       run: |-
         git config user.name "Automated"
