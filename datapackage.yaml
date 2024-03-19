@@ -3,11 +3,7 @@ resources:
   - name: tbl-aux-acao-desc
     title: 'tabela auxiliar ação descrição'
     type: table
-    path: ["data-raw/tbl-aux-acao-desc-2024.csv", "data-raw/tbl-aux-acao-desc-2023.csv",
-    "data-raw/tbl-aux-acao-desc-2023.csv", "data-raw/tbl-aux-acao-desc-2022.csv",
-    "data-raw/tbl-aux-acao-desc-2021.csv", "data-raw/tbl-aux-acao-desc-2020.csv",
-    "data-raw/tbl-aux-acao-desc-2019.csv", "data-raw/tbl-aux-acao-desc-2018.csv", 
-    "data-raw/tbl-aux-acao-desc-2017.csv"]
+    path: ["data-raw/tbl-aux-acao-desc-previous.csv", "data-raw/tbl-aux-acao-desc-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -17,11 +13,7 @@ resources:
 
   - name: tbl-aux-elemento-item-desc
     type: table
-    path: ["data-raw/tbl-aux-elem-item-desc-2024.csv", "data-raw/tbl-aux-elem-item-desc-2023.csv",
-    "data-raw/tbl-aux-elem-item-desc-2023.csv", "data-raw/tbl-aux-elem-item-desc-2022.csv",
-    "data-raw/tbl-aux-elem-item-desc-2021.csv", "data-raw/tbl-aux-elem-item-desc-2020.csv",
-    "data-raw/tbl-aux-elem-item-desc-2019.csv", "data-raw/tbl-aux-elem-item-desc-2018.csv", 
-    "data-raw/tbl-aux-elem-item-desc-2017.csv"]
+    path: ["data-raw/tbl-aux-elem-item-desc-previous.csv", "data-raw/tbl-aux-elem-item-desc-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -29,14 +21,20 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tbl-aux-elemento-item-desc.yaml
 
+  - name: tbl-aux-funcional-programatica-desc
+    type: table
+    path: ["data-raw/tbl-aux-funcional-programatica-desc-previous.csv", "data-raw/tbl-aux-funcional-programatica-desc-current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/tbl-aux-funcional-programatica-desc.yaml
+
 
   - name: tbl-aux-uo-sigla
     type: table
-    path: ["data-raw/tbl-aux-uo-sigla-2024.csv", "data-raw/tbl-aux-uo-sigla-2023.csv",
-    "data-raw/tbl-aux-uo-sigla-2023.csv", "data-raw/tbl-aux-uo-sigla-2022.csv",
-    "data-raw/tbl-aux-uo-sigla-2021.csv", "data-raw/tbl-aux-uo-sigla-2020.csv",
-    "data-raw/tbl-aux-uo-sigla-2019.csv", "data-raw/tbl-aux-uo-sigla-2018.csv", 
-    "data-raw/tbl-aux-uo-sigla-2017.csv"]
+    path: ["data-raw/tbl-aux-uo-sigla-previous.csv", "data-raw/tbl-aux-uo-sigla-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
