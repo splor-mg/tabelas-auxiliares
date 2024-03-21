@@ -2,7 +2,6 @@ fields:
   - name: Ano de Exercício
     type: integer
     target: ano
-    description: "ano do exercício fiscal do orçamento"
   - name: Órgão Vinculação Orçam - Código
     type: integer
     target: orgao-vinculacao_cod

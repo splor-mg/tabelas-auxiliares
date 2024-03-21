@@ -21,6 +21,16 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tbl-aux-elemento-item-desc.yaml
 
+  - name: tbl-aux-fonte-recurso-desc
+    type: table
+    path: ["data-raw/tbl-aux-fonte-recurso-desc-previous.csv", "data-raw/tbl-aux-fonte-recurso-desc-current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/tbl-aux-fonte-recurso-desc.yaml
+
   - name: tbl-aux-funcional-programatica-desc
     type: table
     path: ["data-raw/tbl-aux-funcional-programatica-desc-previous.csv", "data-raw/tbl-aux-funcional-programatica-desc-current.csv"]
@@ -31,6 +41,15 @@ resources:
     dialect: dialect.yaml
     schema: schemas/tbl-aux-funcional-programatica-desc.yaml
 
+  - name: tbl-aux-natureza-receita-desc
+    type: table
+    path: ["data-raw/tbl-aux-natureza-receita-desc-previous.csv", "data-raw/tbl-aux-natureza-receita-desc-current.csv"]
+    scheme: file
+    format: csv
+    mediatype: text/csv
+    encoding: utf-8
+    dialect: dialect.yaml
+    schema: schemas/tbl-aux-natureza-receita-desc.yaml
 
   - name: tbl-aux-uo-sigla
     type: table
