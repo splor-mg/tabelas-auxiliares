@@ -8,6 +8,9 @@ fields:
   - name: Elemento Item Despesa - Descrição
     type: string
     target: elemento-item_desc
+  - name: Valor Crédito Autorizado
+    type: integer
+    target: vlr_credito_autorizado
 
 missingValues:
   - "    " 

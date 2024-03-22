@@ -26,6 +26,9 @@ fields:
   - name: Projeto_Atividade - Descrição
     type: string
     target: acao_desc
+  - name: Valor Crédito Autorizado
+    type: integer
+    target: vlr_credito_autorizado
   
 missingValues:
   - "    " 

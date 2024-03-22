@@ -23,6 +23,9 @@ fields:
   - name: Ano Exercício Unidade Orçamentária
     type: integer
     target: ano_uo
+  - name: Valor Crédito Autorizado
+    type: integer
+    target: vlr_credito_autorizado
 
 missingValues:
   - "    " 
