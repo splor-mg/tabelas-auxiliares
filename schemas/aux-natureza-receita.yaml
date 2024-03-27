@@ -1,0 +1,31 @@
+fields:
+  - name: Ano de Exercício
+    type: integer
+    target: ano
+  - name: Classificação Receita - Código
+    type: integer
+    target: rec_cod
+  - name: Classificação Receita - Descrição
+    type: string
+    target: rec_desc
+  - name: Valor Previsto Inicial
+    type: number
+    target: vlr_previsto_inicial
+    decimalChar: ','
+  - name: Valor Previsto Adicional
+    type: number
+    target: vlr_previsto_adicional
+    decimalChar: ','
+  - name: Valor Efetivado Ajustado
+    type: number
+    target: vlr_efetivado_ajustado
+    decimalChar: ','
+
+missingValues:
+  - "    " 
+  - "   "  
+  - " -   "
+  - "-   "
+  - " "
+  - ""
+  - " - "

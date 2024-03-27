@@ -2,9 +2,6 @@ fields:
   - name: Ano de Exercício
     type: integer
     target: ano
-  - name: Unidade Orçamentária - Código
-    type: integer
-    target: uo_cod
   - name: Função - Código
     type: integer
     target: funcao_cod
@@ -29,12 +26,16 @@ fields:
   - name: Projeto_Atividade - Descrição
     type: string
     target: acao_desc
+  - name: Valor Crédito Autorizado
+    type: number
+    target: vlr_credito_autorizado
+    decimalChar: ','
   
 missingValues:
-- "    " 
-- "   "  
-- " -   "
-- "-   "
-- " "
-- ""
-- " - "
+  - "    " 
+  - "   "  
+  - " -   "
+  - "-   "
+  - " "
+  - ""
+  - " - "

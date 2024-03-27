@@ -2,7 +2,6 @@ fields:
   - name: Ano de Exercício
     type: integer
     target: ano
-    description: "ano do exercício fiscal do orçamento"
   - name: Órgão Vinculação Orçam - Código
     type: integer
     target: orgao-vinculacao_cod
@@ -24,12 +23,16 @@ fields:
   - name: Ano Exercício Unidade Orçamentária
     type: integer
     target: ano_uo
+  - name: Valor Crédito Autorizado
+    type: number
+    target: vlr_credito_autorizado
+    decimalChar: ','
 
 missingValues:
-- "    " 
-- "   "  
-- " -   "
-- "-   "
-- " "
-- ""
-- " - "
+  - "    " 
+  - "   "  
+  - " -   "
+  - "-   "
+  - " "
+  - ""
+  - " - "
