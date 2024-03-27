@@ -27,8 +27,9 @@ fields:
     type: string
     target: acao_desc
   - name: Valor Crédito Autorizado
-    type: integer
+    type: number
     target: vlr_credito_autorizado
+    decimalChar: ','
   
 missingValues:
   - "    " 

@@ -2,7 +2,7 @@ name: tabela-auxiliar
 resources: 
   - name: aux-acao
     type: table
-    path: ["data-raw/aux-acao-previous.csv", "data-raw/aux-acao-current.csv"]
+    path: ["data-raw/aux-acao-rp.csv", "data-raw/aux-acao-previous.csv", "data-raw/aux-acao-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -12,7 +12,7 @@ resources:
 
   - name: aux-elemento-item
     type: table
-    path: ["data-raw/aux-elem-item-previous.csv", "data-raw/aux-elem-item-current.csv"]
+    path: ["data-raw/aux-elem-item-rp.csv", "data-raw/aux-elem-item-previous.csv", "data-raw/aux-elem-item-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -22,7 +22,7 @@ resources:
 
   - name: aux-fonte-recurso
     type: table
-    path: ["data-raw/aux-fonte-recurso-previous.csv", "data-raw/aux-fonte-recurso-current.csv"]
+    path: ["data-raw/aux-fonte-recurso-rp.csv", "data-raw/aux-fonte-recurso-previous.csv", "data-raw/aux-fonte-recurso-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -32,7 +32,7 @@ resources:
 
   - name: aux-funcional-programatica
     type: table
-    path: ["data-raw/aux-funcional-programatica-previous.csv", "data-raw/aux-funcional-programatica-current.csv"]
+    path: ["data-raw/aux-funcional-programatica-rp.csv", "data-raw/aux-funcional-programatica-previous.csv", "data-raw/aux-funcional-programatica-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
@@ -52,7 +52,7 @@ resources:
 
   - name: aux-uo
     type: table
-    path: ["data-raw/aux-uo-previous.csv", "data-raw/aux-uo-current.csv"]
+    path: ["data-raw/aux-uo-rp.csv", "data-raw/aux-uo-previous.csv", "data-raw/aux-uo-current.csv"]
     scheme: file
     format: csv
     mediatype: text/csv
